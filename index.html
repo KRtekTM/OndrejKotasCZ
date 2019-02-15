@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Ondrej Kotas" />
+  <meta name="description" content="Ondrej Kotas" />
+  <meta name="keywords" content="kotas,ondrej kotas" />
+  <meta name="robots" content="index, follow" />
+  
+  <title>Ondrej Kotas</title>
+  
+  <link href="style.css" rel="stylesheet" type="text/css" media="screen,projection" />
+  <link href="favicon.ico" rel="icon" />
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  
+  <script type="text/javascript">
+    $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 50) {
+            $('#scroll').fadeIn(); 
+            $('#scroll').css("display", "block");
+        } else { 
+            $('#scroll').fadeOut(); 
+            $('#scroll').css("display", "none");
+        } 
+    });
+  </script>
+</head>
+
+<body>
+    <div id="header">
+      <div class="menubutton">
+        <a href="#about">Kdo jsem a co dělám?</a>
+      </div>
+      <div class="menubutton">
+        <a href="#calendar">Kalendář mých akcí</a>
+      </div>
+      <div class="menubutton">
+          <a href="#media">Moje mediální výstupy</a>
+        </div>
+      <div class="menubutton">
+        <a href="#contact">Kontakt na mě</a>
+      </div>
+    </div>
+    
+    <div id="intro">
+      <div class="text">
+        <h1 class="title">Ondřej Kotas</h1>
+        brněnský zastupitel za Pirátskou stranu
+      </div>
+    </div>
+    
+    <div id="about" class="content">
+      <h1>Kdo jsem a co dělám?</h1>
+      <p>
+        <span class="bold">Ondřej Kotas</span> <span class="italic">(* 20. ledna 1992)</span> pochází z Brna a do Pirátské strany vstoupil v listopadu 2011.
+      </p>
+
+      <p>
+        Do Pirátské strany, a zároveň do politiky, vstoupil v listopadu 2011 a ihned se zapojil do stranických aktivit. Podílel se například na organizaci tradičních Pirátských náborových dní k 17. listopadu, celorepublikových zasedání a workshopů či konference Pirátské internacionály v roce 2012 v Praze.<br />
+        V červenci roku 2012 byl zvolen za předsedu Jihomoravského krajského sdružení, pomohl se založením místního sdružení Znojmo a participoval na kampani ke krajským volbám. V květnu 2013 rezignoval ze zdravotních důvodů.<br />
+        V krajském předsednictvu setrval až do února 2018, kdy neobhájil mandát.
+      </p>
+
+      <p>
+          V Pirátské straně je aktuálně 3. místopředsedou místního sdružení Brno, pasivní člen zahraničního odboru (francouzský jazyk) a jihomoravského mediálního odboru (videostreaming a videoprocessing), počešťuje komixy Mimi & Eunice a šíří osvětu o konopí, Bitcoinu a svobodných dílech.
+      </p>
+
+
+      <p class="quote">
+        „Vím, že nikdo nemůže rozhodovat za mě samotného. To je také důvod, proč jsem se aktivně zapojil do politického dění v České republice a stal se členem Pirátské strany.“
+      </p>
+
+      <p>
+          Ondřej vystudoval dvojjazyčný obor na Gymnáziu Matyáše Lercha v Brně, což je program vedený dle francouzského školství. Na rozdíl od toho českého, kde je hlavní memorování (pamatování si) informací, je ve francouzském studiu kladen důraz na práci s informacemi a kritické myšlení. Toto studium ukončil maturitou ve francouzštině a získal certifikát odpovídající úrovni DALF C1. Poté studoval 2 roky (s půlroční přestávkou) Aplikovanou informatiku na Masarykově univerzitě.
+      </p>
+
+      <p>
+          Do svého zvolení za uvolněného zastupitele pro informační technologie na brněnský Magistrát se živil jako softwarový tester a automatizační specialista v nadnárodní korporaci zaměřené na vývoj software pro správu a monitoring sítí, ve volném čase jako 3d grafik a tiskař, webdesignér a programátor.
+      </p>
+    </div>
+
+    <div id="calendar" class="content">
+      <h1>Kalendář mých akcí</h1>
+        <iframe
+          src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=2&amp;hl=cs&amp;bgcolor=%23FFFFFF&amp;src=t0h9m7gtkpobf4k47bvl1efsbc%40group.calendar.google.com&amp;color=%2342104A&amp;ctz=Europe%2FPrague"
+          frameborder="0"
+          scrolling="no">
+        </iframe>
+    </div>
+
+    <div id="media" class="content">
+        <h1>Moje mediální výstupy</h1>
+        <div class="container">
+          <a
+            class="twitter-timeline"
+            data-lang="cs"
+            data-width="500"
+            data-height="600"
+            data-dnt="true"
+            data-theme="dark"
+            data-chrome="noheader noborders transparent nofooter"
+            data-link-color="#80cf00"
+            data-widget-id="your-widget-id"
+            href="https://twitter.com/OndrejKotas?ref_src=twsrc%5Etfw"
+          >Tweets by OndrejKotas</a> 
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+        </div>
+        
+        <div class="container">
+            <script type="text/javascript" src="http://output88.rssinclude.com/output?type=js&amp;id=1208460&amp;hash=7b98327819cc2a9d3628838fe70ecd2f"></script>
+        </div>
+
+        <div class="clear"></div>
+      </div>
+
+    <div id="contact" class="content">
+        <h1>Kontakt na mě</h1>
+        <p>
+          <h2></h2>
+            <span class="bold">Ondřej Kotas</span><br />
+            <span class="bold">člen Zastupitelstva města Brna pro oblast informačních technologií</span><br />
+            <span class="bold">3. místopředseda brněnských Pirátů</span><br />
+            <br />
+            Magistrát města Brna<br />
+            Husova 12 | 601 67 Brno | Czech Republic<br />
+            mail: <a href="mailto:ok@krtkovo.eu">ondrej.kotas@pirati.cz</a> | <a href="mailto:kotas.ondrej@brno.cz">kotas.ondrej@brno.cz</a><br />
+            tel.: +420 608 828 650<br />
+        </p>
+    </div>
+
+    <div id="footer" class="right content">
+      Dílo zveřejněno pod licencí <a href="">Creative Commons</a><br />
+      Ondřej Kotas, 2019
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,600&subset=latin-ext');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    background: url('Federica_Pelzel_dark-honeycomb.png') repeat;
+}
+
+h1 {
+    font-weight: 600;
+    font-style: normal;
+    color: #80cf00;
+    text-align: center;
+}
+
+p {
+    margin: 30px 0 30px 0;
+}
+
+p.quote {
+    font-style: italic;
+    text-align: right;
+    margin: 60px 0 60px 0;
+    font-size: 16pt;
+}
+
+div.content {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 150px;
+    color: #ffffff;
+    position: relative;
+}
+
+div.container {
+    width: 500px;
+    float: left;
+}
+
+#header {
+    width: 100%;
+    height: 80px;
+}
+
+#header .menubutton {
+    width: 25%;
+    line-height: 80px;
+    float: left;
+    text-align: center;
+}
+
+a:link, a:visited {
+    color: #80cf00;
+    text-decoration: none;
+    transition: all ease-in-out 0.5s;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all ease-in-out 0.5s;
+}
+
+#intro {
+    background: url('KRU646246_kotas.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 580px;
+    position: relative;
+}
+
+#intro .text {
+    width: 300px;
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    margin-left: -450px;
+    color: #ffffff;
+    font-style: italic;
+}
+
+#calendar iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+
+#footer {
+    margin-top: 80px;   
+    margin-bottom: 40px;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.clear {
+    clear: both;
+}
